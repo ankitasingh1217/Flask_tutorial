@@ -1,0 +1,23 @@
+{% extends "temp6_01.html"%}
+{% block content %}
+<div class="jumbotron">
+
+
+<h1>Welcome to the sign up page!</h1>
+<p>We're excited to have you trial class</p>
+<p>This will redirect to a thank you page.</p>
+<p>
+  Please note, we're not just Trainers, We are Solution Architects !
+</p>
+    <form action="{{url_for('f_temp6_04')}}" method="POST">
+       <label for="first">First Name</label>
+        <input id ='first' type="text" name="yoo">
+
+        <label for="last">Last Name</label>
+        <input type="text" name="man">
+        
+        <input type="submit" value="Submit Form">
+    </form>
+
+</div>
+{% endblock %}
