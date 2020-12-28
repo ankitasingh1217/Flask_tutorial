@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
+    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
+    <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+        <center><a href="https://www.tutorialspoint.com/python"><h2>Welcome to Learn Python</h2></a></center>
+      <img src="{{url_for('static',filename='img3.jpg') }}" class="d-block w-100" alt="...">
+         
+       <div class="carousel-caption d-none d-md-block">
+      <center>
+        <h5>First slide </h5>
+          </center>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+        <center><a href="https://www.tutorialspoint.com/flask/"><h2>Welcome to Learn Flask</h2></a></center>
+      <img src="{{url_for('static',filename='img2.jpg') }}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        <center><h5>Second slide</h5>
+          </center>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <center><a href="https://www.tutorialspoint.com/excel_data_analysis/"><h2>Welcome to Learn Data Analais</h2></a></center>
+      <img src="{{url_for('static',filename='img4.jpg') }}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+      <center>
+        <h5>Third slide </h5>
+          </center>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>        
+
+{% endblock %} 

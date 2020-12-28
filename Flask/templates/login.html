@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<center>
+    <h1>Login Page </h1>
+    <form action='Submit'method='post'>
+  <div class="mb-1">
+    <label for="exampleInputEmail1" class="form-label">Email address :</label>
+    <input type="email" class="form-control" id="InputEmail1" ,name='nm>
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-1">
+    <label for="exampleInputPassword1" class="form-label">Password :</label>
+    <input type="password" class="form-control" id="InputPassword1",name='pd'>
+  </div><br><br><br>
+  <div class="mb-1 form-check">
+    <input type="checkbox" class="form-check-input" id="Check1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</center>
+{% endblock %}     
